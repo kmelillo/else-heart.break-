@@ -1,0 +1,17 @@
+# Kill first fish (closest to the right)
+Wait()
+Wait()
+Forward()
+
+# Kill second fish (far left)
+Left()
+Forward()
+Forward()
+Wait()
+Forward()
+
+# Kill third fish (middle one)
+Right()
+Right()
+Wait()
+Forward()
