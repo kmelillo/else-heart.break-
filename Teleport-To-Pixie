@@ -1,0 +1,7 @@
+# Probably one of the most useful things ever made. Almost every quest
+# in the game has a hook based on the time and whether you met Pixie
+# at that specific time. 
+
+var Util = Connect("Hotel_Room1_GlassOfWater1")
+
+Util.TeleportTo("Pixie")
