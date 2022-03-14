@@ -1,0 +1,6 @@
+# A simple mod on the extractor that copies the name to the clipboard as well as saying it.
+
+Say("Extracting...")
+string name = GetName()
+Say(name)
+CopyToClipboard(name)
