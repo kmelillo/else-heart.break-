@@ -1,0 +1,16 @@
+##############
+# Master Key #
+##############
+# This updates your Modifier to be able to modify ANYTHING.
+# If you are currently modifying a door, it will unlock the door.
+# It will also connect to our Utility-Functions and recharge you!
+
+bool Allow(string target, number level)
+    # The actual computer (or coffee or whatever) doesn't matter, what matters
+    # is that this util stuff is placed somewhere and we know where it is.
+    var Util = Connect("Hotel_Room1_GlassOfWater1")
+    Util.Recharge("Sebastian")
+    Util.Unlock(target)
+
+    return True
+end
