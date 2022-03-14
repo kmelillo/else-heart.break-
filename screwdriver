@@ -1,0 +1,12 @@
+# This code makes the screwdriver modify any computer, to upgrade it.
+#	set script execution runtime to infinite
+SetMaxTime(-2)
+
+#	set clock frequency to 500 Mhz
+SetMhz(500)
+
+#	enable APIs in APIs array
+array APIs = ["arcade","door", "floppy", "internet", "memory"]
+loop APIs
+	EnableAPI(@)
+end
