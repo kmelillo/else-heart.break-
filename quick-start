@@ -1,0 +1,38 @@
+This short quick-start will get you a quick Modifier (The Hotel_Modifier)
+
+Once you reach Hotel Devotchka, use the guest computer in the lobby, and enter
+the following commands, wait for each to execute.
+
+door
+Hotel_Corridor_Door4
+
+Then go to Room 4 (through the kitchen, and upstairs)
+The Hotel_Modifier is under a chair.
+
+So you don't ruin the story at this point, you may want to check-in, and get your
+room door fixed.  After that is complete, you can sleep.  
+
+Now it is time to get the next Modifier.  You need two in order to upgrade.  
+
+Hack the Fuse-Box in your room, and add the following code:
+
+Connect("Lodge_Room1_ModernComputer_1")
+Slurp()
+
+The modifier is in the corner, but do not pick it up yet.  Hack it.
+
+bool Allow(string target, number level)
+    return true
+end
+
+Now you can modify anything in the game!
+
+Choose any computer in the room, and hack it.
+
+Connect("Hotel_Office_DoorToBasement")
+Slurp()
+
+In the basement you will find the Extractor, which is needed to tell you the name
+of any item it is used on.
+
+Exit back up to the Lobby, and start your normal game, with full hacking available!
