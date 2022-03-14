@@ -1,0 +1,24 @@
+# Radio Teleporter Code
+# This complete program is run when the wheel is turned
+# It will teleport you to the next location on your list.
+
+var Util = Connect("Hotel_Room1_GlassOfWater1")
+# Next channel
+var channel = GetChannel()
+channel++
+
+# Wrap around
+if(channel > 2)
+    channel = 0
+end
+
+if(channel == 0)
+    Util.TeleportTo("Pixie")
+else if(channel == 1)
+    Util.TeleportTo("Lodge_Room1_ModernComputer_1")
+else
+    Util.TeleportTo("OrganComputer")
+end
+
+# Store the channel for later
+SetChannel(channel)
