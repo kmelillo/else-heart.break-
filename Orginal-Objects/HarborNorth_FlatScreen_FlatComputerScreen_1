@@ -1,0 +1,8 @@
+# This is the computer on the roof of the radio station.
+if GetUser() == "Monad"
+    Connect("Plaza_FuseBox_Poor_FuseBox_1")
+    Slurp()
+else
+    Print("NOT AUTHORIZED")
+    Sleep(2)
+end
